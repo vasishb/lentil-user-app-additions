@@ -1,0 +1,22 @@
+{
+  "name": "lentil-user-app-additions",
+  "version": "0.1.4",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "run-script-os",
+    "install::darwin:linux": "cd desktop-idle && HOME=~/.electron-gyp node-gyp rebuild --target=3.0.10 --arch=x64 --dist-url=https://atom.io/download/electron --python=python2.7 && cd ..",
+    "install:win32": "cd desktop-idle && node-gyp rebuild --python=python2.7  --target=3.0.10 --arch=ia32 --dist-url=https://electronjs.org/headers && cd ..\\active-win\\windows-dependencies\\ffi\\ && node-gyp rebuild --python=python2.7  --target=3.0.10 --arch=ia32 --dist-url=https://electronjs.org/headers && cd ..\\iconv\\ && node-gyp rebuild --python=python2.7  --target=3.0.10 --arch=ia32 --dist-url=https://electronjs.org/headers && cd ..\\ref\\ && node-gyp rebuild --python=python2.7  --target=3.0.10 --arch=ia32 --dist-url=https://electronjs.org/headers && cd ..\\ref-wchar\\ && npm install --python=python2.7 && cd ..\\ref-struct\\ && npm install --python=python2.7 && echo 'this is a test'",
+    "rebuild::darwin:linux": "cd desktop-idle && HOME=~/.electron-gyp node-gyp rebuild --target=3.0.10 --arch=x64 --dist-url=https://atom.io/download/electron --python=python2.7 && cd ..",
+    "rebuild:win32": "cd desktop-idle && node-gyp rebuild --python=python2.7  --target=3.0.10 --arch=ia32 --dist-url=https://electronjs.org/headers && cd ..\\active-win\\windows-dependencies\\ffi\\ && node-gyp rebuild --python=python2.7  --target=3.0.10 --arch=ia32 --dist-url=https://electronjs.org/headers && cd ..\\iconv\\ && node-gyp rebuild --python=python2.7  --target=3.0.10 --arch=ia32 --dist-url=https://electronjs.org/headers && cd ..\\ref\\ && node-gyp rebuild --python=python2.7  --target=3.0.10 --arch=ia32 --dist-url=https://electronjs.org/headers && cd ..\\ref-wchar\\ && npm install --python=python2.7 && cd ..\\ref-struct\\ && npm install --python=python2.7 && echo 'this is a test'",
+    "postinstall:win32": "xcopy .\\active-win\\windows-dependencies .\\node_modules\\ /S /E /Y",
+    "postinstall:darwin:linux": "echo 'this is a test'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "run-script-os": "^1.0.5",
+    "nan": "^2.14.0"
+  },
+  "devDependencies": {}
+}
