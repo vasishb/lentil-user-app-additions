@@ -1,16 +1,16 @@
 {
   "name": "lentil-user-app-additions",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "",
   "main": "index.js",
   "scripts": {
     "install": "run-script-os",
     "install::darwin:linux": "cd desktop-idle && HOME=~/.electron-gyp node-gyp rebuild --target=5.0.8 --arch=x64 --dist-url=https://atom.io/download/electron --python=python2.7 && cd ..",
-    "install:win32": "cd desktop-idle && node-gyp rebuild --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && cd ..\\ && npm install ffi --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && npm install iconv --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && npm install ref --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && npm install ref-wchar --python=python2.7 && npm install ref-struct --python=python2.7 && echo 'this is a test'",
+    "install:win32": "cd desktop-idle && node-gyp rebuild --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && cd ..\\ && npm install lentil-node-ffi-electron5 --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && npm install iconv --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && npm install ref --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && npm install ref-wchar --python=python2.7 && npm install ref-struct --python=python2.7 && echo 'this is a test'",
     "postinstall:darwin:linux": "echo 'this is a test'",
     "postinstall:win32": "echo 'this is a test'",
     "rebuild::darwin:linux": "cd desktop-idle && HOME=~/.electron-gyp node-gyp rebuild --target=5.0.8 --arch=x64 --dist-url=https://atom.io/download/electron --python=python2.7 && cd ..",
-    "rebuild:win32": "cd desktop-idle && node-gyp rebuild --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && cd ..\\ && npm install ffi --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && npm install iconv --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && npm install ref --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && npm install ref-wchar --python=python2.7 && npm install ref-struct --python=python2.7 && echo 'this is a test'"
+    "rebuild:win32": "cd desktop-idle && node-gyp rebuild --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && cd ..\\ && npm install lentil-node-ffi-electron5 --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && npm install iconv --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && npm install ref --python=python2.7  --target=5.0.8 --arch=ia32 --dist-url=https://electronjs.org/headers && npm install ref-wchar --python=python2.7 && npm install ref-struct --python=python2.7 && echo 'this is a test'"
   },
   "author": "",
   "license": "ISC",
